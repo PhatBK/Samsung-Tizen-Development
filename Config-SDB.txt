@@ -1,0 +1,32 @@
+Chrome Dev Tools
+Prerequisites
+
+Chrome browser
+Samsung Development Bridge
+Command Line Tool
+Actions:
+
+0. Open Command Line Tool (Terminal/Command Prompt/Power Shell/Git Bash/ whatever you like)
+
+1. sdb connect 192.168.0.123 // Samsung TV IP Address
+
+2. sdb devices and check that your device is present
+
+3. Close the Telenor Stream app on your Samsung device by long pressing the back button on your samsung remote.
+
+4. Open the app from command line sdb shell 0 debug SomePackage.Identifier should give this answer ... successfully launched pid = 15900 with 
+debug 1 port: 37846
+
+5. Use port from answer sdb forward tcp:37846 tcp:37846
+
+6. In Open Chrome and paste chrome://inspect/#devices in address bar
+
+7. Check Discover network targets click Configre and add localhost:37846
+
+8. Be sure that app is open on your Samsung and it will show up as a Remote Target
+
+9. When redeploying app repeat step 3 - 7
+
+
+link: https://stackoverflow.com/questions/45275774/open-tizen-remote-web-inspector-from-command-line
+link: https://docs.tizen.org/application/tizen-studio/common-tools/smart-development-bridge/
