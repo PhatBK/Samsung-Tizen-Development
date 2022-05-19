@@ -1,0 +1,5 @@
+https://docs.tizen.org/application/web/get-started/web-service/first-service/
+
+https://docs.tizen.org/application/native/get-started/iot/first-app/
+
+https://docs.tizen.org/application/tizen-studio/common-tools/smart-development-bridge/
