@@ -1,0 +1,9 @@
+tizen build-web
+
+cd .buildResult
+
+tizen package -t wgt -s local-cert
+
+tizen install -n TV360-09-2021.wgt -t T-samsung-6.0-x86
+
+tizen run -p AvQr5LNCOW.tv360new -t T-samsung-6.0-x86
